@@ -18,9 +18,16 @@ header{
     box-shadow: 0 .1rem #e4e4e4;
 }
 header .container a h2,
-section .apresentacao h1{
+section .apresentacao h1,
+section .nos h1{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+}
+section .apresentacao p,
+section .nos p{
+    font-family: "DM+Sans", sans-serif;
+    color: #767676;
+    margin-bottom: 2rem;
 }
 header .container a{
     text-decoration: none;
@@ -43,6 +50,19 @@ header .container .toggle{
 }
 header .container .icon-close{
     display: none;
+}
+section{
+    position: relative;
+    padding-bottom: 2rem;
+}
+section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .05rem;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
 }
 section .imagem-secador{
     height: auto;
@@ -67,11 +87,6 @@ section .imagem-secador .quadrado{
 section .apresentacao{
     text-align: center;
 }
-section .apresentacao p{
-    font-family: "DM+Sans", sans-serif;
-    color: #767676;
-    margin-bottom: 2rem;
-}
 section .apresentacao h1{
     margin-bottom: 1rem;
 }
@@ -84,8 +99,29 @@ section .apresentacao button{
     border: none;
     margin-bottom: 2rem;
 }
-.sobre {
-    height: .1rem;
+section .imagem-equipe {
+    position: relative;
+    display: flex;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+}
+section .imagem-equipe .quadrado {
+    background-color: #ccf4e6;
+    height: 15rem;
+    width: 18rem;
+    border-radius: .3rem;
+    position: absolute;
+    z-index: 0;
+}
+section .imagem-equipe img {
+    margin-top: 2rem;
     width: 100%;
-    background: linear-gradient(90deg, #ccf4e6 0%, #69b99d 100%);
+    z-index: 1;
+}
+section .nos h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+section .nos{
+    text-align: center;
 }
