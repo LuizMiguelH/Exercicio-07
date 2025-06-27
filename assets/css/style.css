@@ -9,53 +9,53 @@ body{
     color: #000
 }
 header,
-.container,
-.imagem{
+header .container,
+section .imagem-secador{
     display: flex;
 }
 header{
     padding: 1rem;
     box-shadow: 0 .1rem #e4e4e4;
 }
-h2,
-.titulo{
+header .container a h2,
+section .apresentacao h1{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
-.logo{
+header .container a{
     text-decoration: none;
 }
-.estilo{
+header .container a h2{
     color: #000;
 }
-.logoCor{
+header .container a h2 span{
     color: #69b99d;
 }
-.container{
+header .container{
     background-color: #fff;
     justify-content: space-between;
     width: 100%;
 }
-.toggle{
+header .container .toggle{
     height: 100%;
     width: auto;
     font-size: 2.3rem;
 }
-.icon-close{
+header .container .icon-close{
     display: none;
 }
-.imagem{
+section .imagem-secador{
     height: auto;
     width: 100%;
     margin-bottom: 3rem;
 }
-.salão{
+section .imagem-secador img{
     height: auto;
     width: 21rem;
     position: absolute;
     margin-top: 4rem;
 }
-.quadrado{
+section .imagem-secador .quadrado{
     background-color: #ccf4e6;
     height: 15rem;
     width: 25rem;
@@ -64,10 +64,28 @@ h2,
     position: relative;
     border-radius: .3rem;
 }
-.texto{
+section .apresentacao{
+    text-align: center;
+}
+section .apresentacao p{
     font-family: "DM+Sans", sans-serif;
     color: #767676;
+    margin-bottom: 2rem;
 }
-.apresentacao{
-    text-align: center;
+section .apresentacao h1{
+    margin-bottom: 1rem;
+}
+section .apresentacao button{
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+    background-color: #69b99d;
+    border-radius: .3rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+.sobre {
+    height: .1rem;
+    width: 100%;
+    background: linear-gradient(90deg, #ccf4e6 0%, #69b99d 100%);
 }
