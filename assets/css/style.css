@@ -15,17 +15,31 @@ section .imagem-secador{
 }
 header{
     padding: 1rem;
-    box-shadow: 0 .1rem #e4e4e4;
+    border-bottom: solid .1rem #e4e4e4;
+    padding-bottom: 0;
 }
-header .container a h2,
-section .apresentacao h1,
-section .nos h1{
+h1, h2{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    font-size: calc(1rem + 3.5vw);
+    padding-bottom: 1rem;
+}
+p{
+    font-size: calc(.9rem + .5vw);
+    font-family: "DM Sans", sans-serif;
+}
+.direita{
+    height: .05rem;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
+}
+.esquerda{
+    height: .05rem;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
 }
 section .apresentacao p,
 section .nos p{
-    font-family: "DM+Sans", sans-serif;
     color: #767676;
     margin-bottom: 2rem;
 }
@@ -55,15 +69,6 @@ section{
     position: relative;
     padding-bottom: 2rem;
 }
-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: .05rem;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
-}
 section .imagem-secador{
     height: auto;
     width: 100%;
@@ -86,9 +91,6 @@ section .imagem-secador .quadrado{
 }
 section .apresentacao{
     text-align: center;
-}
-section .apresentacao h1{
-    margin-bottom: 1rem;
 }
 section .apresentacao button{
     width: 12rem;
@@ -121,7 +123,47 @@ section .imagem-equipe img {
 section .nos h1{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    text-align: left;
 }
 section .nos{
+    margin-left: 2rem;
+    margin-right: 2rem;
     text-align: center;
+    width: 20rem;
+    height: auto;
 }
+section .nos p{
+    flex-wrap: wrap;
+    text-align: left;
+}
+section .trabalhos{
+    padding: 5rem 2rem 2rem 2rem;
+    text-align: left;
+}
+section .trabalhos span{
+    color: #69b99d;
+    font-weight: bold;
+}
+section .quadrados .quadrado{
+    width: 21rem;
+    height: 22rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-top: 4rem;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.15);
+    border-radius: .3rem .3rem 0 0;
+    border-bottom: #69b99d solid .3rem;
+}
+section .quadrados{
+    justify-items: center;
+}
+section .quadrados .quadrado .icon{
+    font-size: 5rem;
+    color: #69b99d;
+    margin-bottom: 1rem;
+}
+section .quadrados .quadrado p{
+    color: #767676;
+    margin: 0 2rem 0 2rem;
+}
+
