@@ -29,14 +29,14 @@ p{
     font-family: "DM Sans", sans-serif;
 }
 .direita{
-    height: .05rem;
+    height: .1rem;
     width: 100%;
     background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
 }
 .esquerda{
-    height: .05rem;
+    height: .1rem;
     width: 100%;
-    background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
+    background: linear-gradient(90deg, rgba(105, 185, 157, 1) 0%,  rgba(204, 244, 230, 0.34) 100%);
 }
 section .apresentacao p,
 section .nos p{
@@ -165,5 +165,10 @@ section .quadrados .quadrado .icon{
 section .quadrados .quadrado p{
     color: #767676;
     margin: 0 2rem 0 2rem;
+}
+section .feedback{
+    margin-top: 4rem;
+    width: 20rem;
+    height: auto;
 }
 
