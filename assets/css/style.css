@@ -167,10 +167,8 @@ section .quadrados .quadrado p{
     color: #767676;
     margin: 0 2rem 0 2rem;
 }
-section.depoimentos{
-    justify-items: center;
-}
 section .feedback{
+    margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 1rem;
     justify-content: center;
@@ -181,9 +179,19 @@ section .feedback{
 section  .feedback h1{
     font-size: calc(1rem + 3.8vw);
 }
+section .mySwiper{
+    width: 22rem;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+section .swiper-slide{
+    display: flex;
+}
 section .swiper .card{
-    width: 21rem;
-    height: 19rem;
+    width: 20rem;
+    height: 20rem;
     margin-bottom: 1rem;
     justify-items: center;
     text-align: left;
@@ -192,8 +200,9 @@ section .swiper .card{
     border-radius: .3rem;
 }
 section .swiper .card p{
-    width: 18rem;
+    width: 90%;
     font-size: calc(.9rem + .5vw);
+    margin-left: 1.625rem;
 }
 section .swiper .card p span{
     color: #69b99d;
@@ -201,4 +210,53 @@ section .swiper .card p span{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 0.3rem;
     vertical-align: -1rem;
+}
+section .swiper .card .footer{
+    display: flex;
+    max-width: 20rem;
+    width: 90%;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+section .swiper .card .footer img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+section .swiper .card .footer p{
+    margin-left: 0.5rem;
+}
+section.contato{
+    width: 20rem;
+    padding-top: 3.5rem;
+    margin: 0 auto;
+}
+section.contato p{
+    margin-bottom: 2rem;
+    color: #767676;
+}
+section.contato button{
+    width: 70%;
+    height: 3.5rem;
+    border: 0;
+    background-color: #69b99d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3rem;
+    margin-bottom: 3rem;
+}
+section.contato button p,
+section.contato button span{
+    color: #fff;
+    margin: 0;
+}
+section.contato button span{
+    font-size: calc(1.25rem + .5vw);
+    margin-right: .5rem;
+}
+section.contato .contatos span{
+    height: 3rem;
+    width: 3rem;
+    color: #000;
 }
