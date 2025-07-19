@@ -24,9 +24,12 @@ h1, h2{
     font-size: calc(1rem + 3.5vw);
     padding-bottom: 1rem;
 }
-p{
+p, a{
     font-size: calc(.9rem + .5vw);
     font-family: "DM Sans", sans-serif;
+}
+header .menu{
+    display: none;
 }
 .direita{
     height: .05rem;
@@ -286,4 +289,46 @@ footer h3{
 footer h3 span,
 footer p{
     color: #fff;
+}
+footer p{
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+footer .rede-social{
+    text-align: left;
+    padding-bottom: 4rem;
+}
+footer .rede-social span{
+    font-size: calc(1.5rem + 1vw);
+    font-weight: lighter;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+@media screen and (min-width: 1020px){
+
+    /*CABEÇALHO*/
+    header{
+    padding-left: 10rem;
+    }
+
+    h1, h2{
+    font-size: calc(1rem + 1vw);
+    }
+
+    header .icon-menu{
+        display: none;
+    }
+
+    header .menu{
+        display: flex;
+    }
+
+    header .menu ul{
+        display: flex;
+    }
+
+    header .menu ul li{
+        list-style-type: none;
+    } 
 }
