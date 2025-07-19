@@ -255,8 +255,35 @@ section.contato button span{
     font-size: calc(1.25rem + .5vw);
     margin-right: .5rem;
 }
+section.contato .contatos .telefone,
+section.contato .contatos .localization,
+section.contato .contatos .email{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
 section.contato .contatos span{
-    height: 3rem;
-    width: 3rem;
-    color: #000;
+    font-size: calc(1.625rem + .5vw);
+    color: #69b99d;
+}
+section.contato .contatos p{
+    margin: 0;
+    margin-left: 0.5rem;
+}
+footer{
+    margin-top: 1.625rem;
+    background-color: #69b99d;
+    padding-top: 3.5rem;
+    padding-left: 2rem;
+}
+footer h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: calc(1rem + 2vw);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+footer h3 span,
+footer p{
+    color: #fff;
 }
