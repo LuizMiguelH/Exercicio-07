@@ -307,13 +307,34 @@ footer .rede-social span{
 
 @media screen and (min-width: 1020px){
 
-    /*CABEÇALHO*/
-    header{
-    padding-left: 10rem;
+    /*GERAL*/
+
+    h1{
+    font-size: calc(1.25rem + 1vw);
     }
 
-    h1, h2{
-    font-size: calc(1rem + 1vw);
+    h2{
+    font-size: calc(1rem + .8vw);
+    }
+
+    p{
+    font-size: calc(.8rem + .5vw);
+
+    .direita{
+        flex-basis: 100%;
+    }
+
+    .esquerda{
+        flex-basis: 100%;
+    }
+}
+
+    /*HEADER*/
+
+    header{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    position: static;
     }
 
     header .icon-menu{
@@ -322,6 +343,7 @@ footer .rede-social span{
 
     header .menu{
         display: flex;
+        margin-top: .5rem;
     }
 
     header .menu ul{
@@ -330,5 +352,69 @@ footer .rede-social span{
 
     header .menu ul li{
         list-style-type: none;
+        margin-left: 2rem;
+        cursor: pointer;
     } 
+
+    header .menu ul li a{
+        color: #000;
+    }
+
+    header .menu ul li:hover{
+        border-bottom: solid .2rem #69b99d;
+    }
+
+    header .menu ul li:hover a{
+        color: #69b99d;
+    }
+
+    /*MAIN*/
+
+    section.inicio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        padding-left: 10rem;
+        justify-content: space-between;
+    }
+
+    section .imagem-secador{
+        height: auto;
+        width: auto;
+        margin-bottom: 3rem;
+    }
+
+    section .imagem-secador .quadrado{
+        height: 29.5rem;
+        width: 40rem;
+        margin: 5rem 5rem 10rem 10rem;
+        position: relative;
+        border-radius: .3rem;
+    }
+
+    section .imagem-secador img{
+        height: auto;
+        width: 40rem;
+        margin-top: 10.5rem;
+        border-radius: .3rem;
+        right: 12rem;
+    }
+
+    section .apresentacao{
+        align-content: center;
+    }
+
+    section .apresentacao h1{
+        text-align: left;
+    }
+
+    section .apresentacao p{
+        color: #767676;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    section .apresentacao button{
+        margin-right: 100%;
+    }
 }
