@@ -23,10 +23,14 @@ h1, h2{
     font-weight: bold;
     font-size: calc(1rem + 3.5vw);
     padding-bottom: 1rem;
+    cursor: default;
 }
 p, a{
     font-size: calc(.9rem + .5vw);
     font-family: "DM Sans", sans-serif;
+}
+p{
+    cursor: default;
 }
 header .menu{
     display: none;
@@ -70,7 +74,12 @@ header .container .icon-close{
 }
 section{
     position: relative;
-    padding-bottom: 2rem;
+    
+}
+section.inicio,
+section.servicos,
+section.contato{
+    background-color: #F9F9F9;
 }
 section .imagem-secador{
     height: auto;
@@ -230,9 +239,9 @@ section .swiper .card .footer p{
     margin-left: 0.5rem;
 }
 section.contato{
-    width: 20rem;
     padding-top: 3.5rem;
-    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 section.contato p{
     margin-bottom: 2rem;
@@ -274,7 +283,6 @@ section.contato .contatos p{
     margin-left: 0.5rem;
 }
 footer{
-    margin-top: 1.625rem;
     background-color: #69b99d;
     padding-top: 3.5rem;
     padding-left: 2rem;
@@ -310,7 +318,7 @@ footer .rede-social span{
     /*GERAL*/
 
     h1{
-    font-size: calc(2rem + 1vw);
+    font-size: calc(1.8rem + 1vw);
     }
 
     h2{
@@ -383,24 +391,25 @@ footer .rede-social span{
     }
 
     section .imagem-secador .quadrado{
-        height: 45rem;
-        width: 60rem;
-        margin: 8.25rem 10rem 10rem 10rem;
+        height: 29.5rem;
+        width: 40rem;
+        margin: 8rem 10rem 16.5rem 10rem;
         position: relative;
         border-radius: .3rem;
     }
 
     section .imagem-secador img{
         height: auto;
-        width: 60rem;
-        margin-top: 15rem;
+        width: 40rem;
+        margin-top: 13rem;
         border-radius: .3rem;
-        right: 18rem;
+        right: 16rem;
     }
 
     section .apresentacao{
         align-content: center;
         margin-left: 15rem;
+        margin-bottom: 7rem;
     }
 
     section .apresentacao h1{
@@ -415,12 +424,44 @@ footer .rede-social span{
 
     section .apresentacao button{
         margin-right: 100%;
-        width: 20rem;
-        height: 5rem;
+        width: 16.65rem;
+        height: 4rem;
         border-radius: .3rem;
         font-size: large;
         word-spacing: .35rem;  
     }
 
+    section.sobre{
+        display: flex;
+        flex-direction: row;
+    }
 
+    section .imagem-equipe {
+        margin-bottom: 2rem;
+        padding-top: 15rem;
+    }
+
+    section .imagem-equipe .quadrado {
+        width: 20rem;
+    }
+
+    section .imagem-equipe img {
+        height: auto;
+        width: 40rem;
+        margin-right: 5rem;
+    }
+
+    section .nos{
+        padding-top: 17rem;
+        width: auto;
+        height: auto;
+    }
+
+    section .nos p{
+        font-size: calc(1rem + .5vw);
+    }
+
+    section .nos h1{
+        font-size: calc(1.5rem + 1vw);
+    }
 }
