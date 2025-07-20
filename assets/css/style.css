@@ -310,7 +310,7 @@ footer .rede-social span{
     /*GERAL*/
 
     h1{
-    font-size: calc(1.25rem + 1vw);
+    font-size: calc(2rem + 1vw);
     }
 
     h2{
@@ -332,9 +332,8 @@ footer .rede-social span{
     /*HEADER*/
 
     header{
-    padding-left: 10rem;
-    padding-right: 10rem;
-    position: static;
+    padding-left: 15rem;
+    padding-right: 15rem;
     }
 
     header .icon-menu{
@@ -374,7 +373,6 @@ footer .rede-social span{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
-        padding-left: 10rem;
         justify-content: space-between;
     }
 
@@ -385,23 +383,24 @@ footer .rede-social span{
     }
 
     section .imagem-secador .quadrado{
-        height: 29.5rem;
-        width: 40rem;
-        margin: 5rem 5rem 10rem 10rem;
+        height: 45rem;
+        width: 60rem;
+        margin: 8.25rem 10rem 10rem 10rem;
         position: relative;
         border-radius: .3rem;
     }
 
     section .imagem-secador img{
         height: auto;
-        width: 40rem;
-        margin-top: 10.5rem;
+        width: 60rem;
+        margin-top: 15rem;
         border-radius: .3rem;
-        right: 12rem;
+        right: 18rem;
     }
 
     section .apresentacao{
         align-content: center;
+        margin-left: 15rem;
     }
 
     section .apresentacao h1{
@@ -416,5 +415,12 @@ footer .rede-social span{
 
     section .apresentacao button{
         margin-right: 100%;
+        width: 20rem;
+        height: 5rem;
+        border-radius: .3rem;
+        font-size: large;
+        word-spacing: .35rem;  
     }
+
+
 }
