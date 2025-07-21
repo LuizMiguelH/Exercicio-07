@@ -17,7 +17,6 @@ section .imagem-secador{
 }
 
 header{
-    padding: 1rem;
     border-bottom: solid .1rem #e4e4e4;
     padding-bottom: 0;
 }
@@ -67,6 +66,8 @@ header .container a{
 
 header .container a h2{
     color: #000;
+    margin-top: 1rem;
+    margin-left:1rem;
 }
 
 header .container a h2 span{
@@ -83,10 +84,40 @@ header .container .toggle{
     height: 100%;
     width: auto;
     font-size: 2.3rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
-header .container .icon-close{
+header .container .menu-mobile{
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
     display: none;
+}
+
+header .container .menu-mobile .icon-close{
+    color: #69b99d;
+    position: absolute;
+    top: .5rem;
+    left: 20rem;
+    font-size: calc(1.75rem + 1vw);
+}
+
+header .container .menu-mobile ul{
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+    list-style: none;
+}
+
+header .container .menu-mobile ul li a{
+    color: #000;
+    font-size: calc(2rem + 1vw);
+    font-weight: bold;
+    line-height: 7.5rem;
 }
 
 section{
@@ -389,6 +420,7 @@ footer .rede-social span{
 
     p{
     font-size: calc(.8rem + .5vw);
+    }
 
     .direita{
         flex-basis: 100%;
@@ -397,7 +429,10 @@ footer .rede-social span{
     .esquerda{
         flex-basis: 100%;
     }
-}
+    
+    header .container .menu-mobile{
+        display: none;
+    }
 
     /*HEADER*/
 
@@ -416,6 +451,7 @@ footer .rede-social span{
     }
 
     header .menu ul{
+        margin-top: 1rem;
         display: flex;
     }
 
