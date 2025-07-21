@@ -3,21 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-style: normal;
     background-color: #ffffff;
     color: #000
 }
+
 header,
 header .container,
 section .imagem-secador{
     display: flex;
 }
+
 header{
     padding: 1rem;
     border-bottom: solid .1rem #e4e4e4;
     padding-bottom: 0;
 }
+
 h1, h2{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -25,73 +29,89 @@ h1, h2{
     padding-bottom: 1rem;
     cursor: default;
 }
+
 p, a{
     font-size: calc(.9rem + .5vw);
     font-family: "DM Sans", sans-serif;
 }
+
 p{
     cursor: default;
 }
+
 header .menu{
     display: none;
 }
+
 .direita{
     height: .05rem;
     width: 100%;
     background: linear-gradient(90deg, rgba(204, 244, 230, 0.34) 0%, rgba(105, 185, 157, 1) 100%);
 }
+
 .esquerda{
     height: .06rem;
     width: 100%;
     background: linear-gradient(90deg, rgba(105, 185, 157, 1) 0%,  rgba(204, 244, 230, 0.34) 100%);
 }
+
 section .apresentacao p,
 section .nos p{
     color: #767676;
     margin-bottom: 2rem;
 }
+
 header .container a{
     text-decoration: none;
 }
+
 header .container a h2{
     color: #000;
 }
+
 header .container a h2 span{
     color: #69b99d;
 }
+
 header .container{
     background-color: #fff;
     justify-content: space-between;
     width: 100%;
 }
+
 header .container .toggle{
     height: 100%;
     width: auto;
     font-size: 2.3rem;
 }
+
 header .container .icon-close{
     display: none;
 }
+
 section{
     position: relative;
-    
 }
+
 section.inicio,
 section.servicos,
 section.contato{
     background-color: #F9F9F9;
 }
+
 section .imagem-secador{
     height: auto;
     width: 100%;
     margin-bottom: 3rem;
 }
+
 section .imagem-secador img{
     height: auto;
     width: 21rem;
     position: absolute;
     margin-top: 4rem;
 }
+
 section .imagem-secador .quadrado{
     background-color: #ccf4e6;
     height: 15rem;
@@ -101,9 +121,11 @@ section .imagem-secador .quadrado{
     position: relative;
     border-radius: .3rem;
 }
+
 section .apresentacao{
     text-align: center;
 }
+
 section .apresentacao button{
     width: 12rem;
     height: 3rem;
@@ -113,12 +135,14 @@ section .apresentacao button{
     border: none;
     margin-bottom: 2rem;
 }
+
 section .imagem-equipe {
     position: relative;
     display: flex;
     margin-bottom: 2rem;
     padding-top: 5rem;
 }
+
 section .imagem-equipe .quadrado {
     background-color: #ccf4e6;
     height: 15rem;
@@ -127,16 +151,19 @@ section .imagem-equipe .quadrado {
     position: absolute;
     z-index: 0;
 }
+
 section .imagem-equipe img {
     margin-top: 2rem;
     width: 100%;
     z-index: 1;
 }
+
 section .nos h1{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     text-align: left;
 }
+
 section .nos{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -144,18 +171,22 @@ section .nos{
     width: 20rem;
     height: auto;
 }
+
 section .nos p{
     flex-wrap: wrap;
     text-align: left;
 }
+
 section .trabalhos{
     padding: 5rem 2rem 2rem 2rem;
     text-align: left;
 }
+
 section .trabalhos span{
     color: #69b99d;
     font-weight: bold;
 }
+
 section .quadrados .quadrado{
     width: 21rem;
     height: 22rem;
@@ -166,19 +197,23 @@ section .quadrados .quadrado{
     border-radius: .3rem .3rem 0 0;
     border-bottom: #69b99d solid .3rem;
 }
+
 section .quadrados{
     justify-items: center;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
+
 section .quadrados .quadrado .icon{
     font-size: 5rem;
     color: #69b99d;
     margin-bottom: 1rem;
 }
+
 section .quadrados .quadrado p{
     color: #767676;
     margin: 0 2rem 0 2rem;
 }
+
 section .feedback{
     margin: 0 auto;
     margin-top: 3rem;
@@ -188,9 +223,11 @@ section .feedback{
     width: 20rem;
     height: auto;
 }
+
 section  .feedback h1{
     font-size: calc(1rem + 3.8vw);
 }
+
 section .mySwiper{
     width: 22rem;
     justify-content: center;
@@ -198,9 +235,11 @@ section .mySwiper{
     display: flex;
     overflow: hidden;
 }
+
 section .swiper-slide{
     display: flex;
 }
+
 section .swiper .card{
     width: 20rem;
     height: 20rem;
@@ -211,11 +250,13 @@ section .swiper .card{
     box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.15);
     border-radius: .3rem;
 }
+
 section .swiper .card p{
     width: 90%;
     font-size: calc(.9rem + .5vw);
     margin-left: 1.625rem;
 }
+
 section .swiper .card p span{
     color: #69b99d;
     font-size: calc(3rem + .5vw);
@@ -223,6 +264,7 @@ section .swiper .card p span{
     margin-right: 0.3rem;
     vertical-align: -1rem;
 }
+
 section .swiper .card .footer{
     display: flex;
     max-width: 20rem;
@@ -230,23 +272,28 @@ section .swiper .card .footer{
     margin-top: 1.5rem;
     align-items: center;
 }
+
 section .swiper .card .footer img{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
 }
+
 section .swiper .card .footer p{
     margin-left: 0.5rem;
 }
+
 section.contato{
     padding-top: 3.5rem;
     padding-right: 2rem;
     padding-left: 2rem;
 }
+
 section.contato p{
     margin-bottom: 2rem;
     color: #767676;
 }
+
 section.contato button{
     width: 70%;
     height: 3.5rem;
@@ -258,15 +305,18 @@ section.contato button{
     border-radius: .3rem;
     margin-bottom: 3rem;
 }
+
 section.contato button p,
 section.contato button span{
     color: #fff;
     margin: 0;
 }
+
 section.contato button span{
     font-size: calc(1.25rem + .5vw);
     margin-right: .5rem;
 }
+
 section.contato .contatos .telefone,
 section.contato .contatos .localization,
 section.contato .contatos .email{
@@ -274,19 +324,27 @@ section.contato .contatos .email{
     align-items: center;
     margin-bottom: 2rem;
 }
+
 section.contato .contatos span{
     font-size: calc(1.625rem + .5vw);
     color: #69b99d;
 }
+
 section.contato .contatos p{
     margin: 0;
     margin-left: 0.5rem;
 }
+
+section.contato .contatos .icon-mail{
+        margin: 0;
+}
+
 footer{
     background-color: #69b99d;
     padding-top: 3.5rem;
     padding-left: 2rem;
 }
+
 footer h3{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -294,18 +352,22 @@ footer h3{
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
+
 footer h3 span,
 footer p{
     color: #fff;
 }
+
 footer p{
     line-height: 2rem;
     padding-bottom: 3rem;
 }
+
 footer .rede-social{
     text-align: left;
     padding-bottom: 4rem;
 }
+
 footer .rede-social span{
     font-size: calc(1.5rem + 1vw);
     font-weight: lighter;
@@ -382,6 +444,8 @@ footer .rede-social span{
         flex-wrap: wrap;
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding-left: 15rem;
+        padding-right: 10rem;
     }
 
     section .imagem-secador{
@@ -393,7 +457,7 @@ footer .rede-social span{
     section .imagem-secador .quadrado{
         height: 29.5rem;
         width: 40rem;
-        margin: 8rem 10rem 16.5rem 10rem;
+        margin: 8rem 0 16.5rem 10rem;
         position: relative;
         border-radius: .3rem;
     }
@@ -408,7 +472,6 @@ footer .rede-social span{
 
     section .apresentacao{
         align-content: center;
-        margin-left: 15rem;
         margin-bottom: 7rem;
     }
 
@@ -434,6 +497,10 @@ footer .rede-social span{
     section.sobre{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 10rem;
+        padding-bottom: 10rem;
     }
 
     section .imagem-equipe {
@@ -442,26 +509,182 @@ footer .rede-social span{
     }
 
     section .imagem-equipe .quadrado {
-        width: 20rem;
+        width: 30rem;
     }
 
     section .imagem-equipe img {
         height: auto;
-        width: 40rem;
+        width: 50rem;
         margin-right: 5rem;
     }
 
     section .nos{
         padding-top: 17rem;
-        width: auto;
+        width: 40%;
         height: auto;
     }
 
     section .nos p{
-        font-size: calc(1rem + .5vw);
+        font-size: calc(.75rem + .5vw);
     }
 
     section .nos h1{
         font-size: calc(1.5rem + 1vw);
+    }
+
+    section.sobre .esquerda{
+        margin-top: 10rem;
+    }
+
+    section.servicos{
+        padding: 10rem 10rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    section .trabalhos{
+        text-align: center;
+        width: 100%;
+        padding-left: 29rem;
+        padding-right: 29rem;
+        padding-bottom: 5rem;
+    }
+
+    section .quadrados{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    section .quadrados .quadrado{
+        width: 30rem;
+        height: 29rem;
+        padding: 5rem 3.5rem;
+    }
+
+    section .quadrados .quadrado .icon{
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    section .quadrados .quadrado p{
+        margin: 0;
+    }
+
+    section  .depoimentos{
+        justify-content: center;
+    }
+
+    section.depoimentos .feedback{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 15rem 35% 0 35%
+    } 
+
+    section.depoimentos .feedback h1{
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    section.depoimentos .mySwiper{
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    section .swiper-wrapper{
+        display: flex;
+    }
+
+    section .swiper-slide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    section .swiper .card{
+        width: 50rem;
+        height: auto;
+        padding: 6rem;
+    }
+
+    section .card p{
+        width: 100%;
+        margin: 0;
+    }
+
+    section .swiper .card .footer{
+        display: flex;
+        max-width: none;
+        width: 100%;
+        margin-top: 1.5rem;
+        align-items: left;
+    }
+
+    section .swiper .card .footer img{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin-left: 1.5rem;
+    }
+
+    section.contato{
+        display: flex;
+        padding: 20rem 15rem;
+    }
+
+    section.contato .text h1{
+        width: 50%;
+    }
+
+    section.contato .text p{
+        width: 45%;
+    }
+
+    section.contato button{
+        width: 30%;
+        height: 4rem;
+    }
+
+    section.contato button p{
+        font-size: calc(.33rem + .5vw);
+
+    }
+
+    section.contato button span{
+        font-size: calc(1rem + .5vw);
+    }
+
+    section.contato .contatos{
+        margin-top: 5rem;
+    }
+
+    section.contato .contatos span{
+        font-size: calc(1.625rem + .5vw);
+        color: #69b99d;
+    }
+
+    section.contato .contatos p{
+        margin: 0;
+        margin-left: 0.5rem;
+    }
+
+    footer{
+        display: flex;
+        padding: 5rem 15rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .text p{
+        line-height: 2.5rem;
+    }
+
+    footer .rede-social{
+        padding: 0;
     }
 }
