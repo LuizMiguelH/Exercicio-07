@@ -4,21 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-style: normal;
     background-color: #ffffff;
     color: #000
-}
-
-header,
-header .container,
-section .imagem-secador{
-    display: flex;
-}
-
-header{
-    border-bottom: solid .1rem #e4e4e4;
-    padding-bottom: 0;
 }
 
 h1, h2{
@@ -38,10 +31,6 @@ p{
     cursor: default;
 }
 
-header .menu{
-    display: none;
-}
-
 .direita{
     height: .05rem;
     width: 100%;
@@ -52,6 +41,27 @@ header .menu{
     height: .06rem;
     width: 100%;
     background: linear-gradient(90deg, rgba(105, 185, 157, 1) 0%,  rgba(204, 244, 230, 0.34) 100%);
+}
+
+header,
+header .container,
+section .imagem-secador{
+    display: flex;
+}
+
+header{
+    border-bottom: solid .1rem #e4e4e4;
+    padding-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+header .menu{
+    display: none;
 }
 
 section .apresentacao p,
@@ -118,6 +128,14 @@ header .container .menu-mobile ul li a{
     font-size: calc(2rem + 1vw);
     font-weight: bold;
     line-height: 7.5rem;
+}
+
+header .menu-mobile ul li:hover{
+    border-bottom: solid .2rem #69b99d;
+}
+
+header .menu-mobile ul li:hover a{
+    color: #69b99d;
 }
 
 section{
