@@ -43,6 +43,29 @@ p{
     background: linear-gradient(90deg, rgba(105, 185, 157, 1) 0%,  rgba(204, 244, 230, 0.34) 100%);
 }
 
+@keyframes animation {
+    0%{
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+button:hover{
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+button p:hover{
+    cursor: pointer;
+}
+
 header,
 header .container,
 section .imagem-secador{
@@ -106,6 +129,7 @@ header .container .menu-mobile{
     top: 0;
     z-index: 2000;
     display: none;
+    transition: 1s;
 }
 
 header .container .menu-mobile .icon-close{
@@ -330,6 +354,27 @@ section .swiper .card .footer img{
 
 section .swiper .card .footer p{
     margin-left: 0.5rem;
+}
+
+section .swiper .swiper-wrapper .toggle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 5rem 0;
+}
+
+section .swiper .swiper-wrapper .toggle-ball{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+section .swiper .swiper-wrapper .toggle .ball{
+    width: .9rem;
+    height: .9rem;
+    border-radius: 50%;
+    background-color: #E4E4E4;
 }
 
 section.contato{
