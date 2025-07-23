@@ -62,7 +62,9 @@ button:hover{
     cursor: pointer;
 }
 
-button p:hover{
+button p:hover,
+section.contato .contatos span,
+header a h2{
     cursor: pointer;
 }
 
@@ -467,6 +469,7 @@ footer .rede-social span{
     font-weight: lighter;
     color: #fff;
     margin-right: 2rem;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1020px){
